@@ -23,6 +23,8 @@ fs = require('fs');
     iCVC.sendKeys("1234");
 
     driver.wait(until.elementLocated(By.id ("buttonPayment"), 2000)).click();
+    await driver.sleep(2000);
+    driver.quit();
 
 })();
 
